@@ -55,7 +55,8 @@ h2 {
 img {
   width: 100%;
   height: 50vh;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
 }
 
 /* Added wrapper class, set some spacing. Remember, margin sets space o utside of the box, while padding sets the space inside the box */
