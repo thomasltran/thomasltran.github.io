@@ -152,8 +152,14 @@ img {
   margin: auto;
 }
 
-footer {
-  margin-top: 44px;
+footer div {
+  height: 100%;
+  font-family: 'Cormorant', sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-content: center;
+  padding: 10px 20px;
+  color: rgba(5,80,124,0.5);
 }
 
 @media all and (max-width:700px) {
