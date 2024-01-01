@@ -88,7 +88,7 @@
         left: -20px;
         top: 0;
         transform: translateX(-50%);
-        background-image: linear-gradient(to bottom, #faf9f6, #b0b0b0);
+        background-image: linear-gradient(to bottom, #faf9f6, #faf9f6);
     }
     .container ul li {
         width: 100%;
@@ -134,7 +134,7 @@
         position: absolute;
         width: 130px;
         height: 33px;
-        background-image: linear-gradient(to right, #faf9f6, #b0b0b0);
+        background-image: linear-gradient(to right, #cdcbcb, #cdcbcb);
         border-radius: 15px;
         top: -45px;
         left: 0;

@@ -65,9 +65,6 @@
         width: 100%;
         height: 100vh;
         color: black;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         position: sticky;
         top: 0;
     }
@@ -103,8 +100,5 @@
         height: 100%;
         object-fit: cover;
         z-index: 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 </style>
