@@ -10,9 +10,7 @@
     }
 </script>
 
-<h1><a href="/blog" target="_blank"
-    >Blog</a
-></h1>
+<h1><a href="/blog" target="_blank">Blog</a></h1>
 
 <LayoutGrid>
     <div class="cells">
@@ -26,12 +24,21 @@
                     seeing my progress.
                 </p>
                 <p>
-                    Beyond that, the repetition and cyclic nature of it all
-                    feels meditative.
+                    Plus, I get to catch up on my favorite <a
+                        href="https://podcasts.apple.com/us/podcast/behind-the-baller-podcast-with-ben-baller/id1475680946"
+                        target="_blank">podcasts</a
+                    >
+                    and
+                    <a
+                        href="https://open.spotify.com/artist/3MZsBdqDrRTJihTHQrO6Dq"
+                        target="blank">artists</a
+                    > during this time.
                 </p>
                 <p>
-                    Feel free to check out my <a class="blog" href="/blog" target="_blank"
-                        >blog</a
+                    Feel free to check out my <a
+                        class="blog"
+                        href="/blog"
+                        target="_blank">blog</a
                     > where I detail my journey.
                 </p>
             </div>
@@ -114,11 +121,16 @@
         padding: 0 2em;
     }
 
-    a.blog {
+    :link {
         color: #0000ee;
+    }
+    :visited {
+        color: #551a8b;
     }
 
     h1 > a {
+        color: #0e1111 !important; /* Adjust the color to your preference */
+
         text-decoration: none !important;
     }
 </style>

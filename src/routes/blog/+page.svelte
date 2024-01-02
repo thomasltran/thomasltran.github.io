@@ -1,10 +1,30 @@
 <script>
+    export let data;
 </script>
 
 <body>
-    <h1>Blog</h1>
-    <p1>hello wordl</p1>
-    <a href="/blog/1">1</a>
+    <div>
+        <h1>Blog</h1>
+        <p class="description">
+            Main website is <a
+                href="https://thomasltran.github.io/" target="_blank">here</a
+            >, but it's best viewed on desktop until I have time for
+            responsiveness.
+        </p>
+        <div>
+            <ul>
+                {#each data.posts as post}
+                    <li>
+                        <p>
+                            <a href={post.path} target="_blank">
+                                {post.meta.date}
+                            </a>
+                        </p>
+                    </li>
+                {/each}
+            </ul>
+        </div>
+    </div>
 </body>
 
 <style>
@@ -20,6 +40,17 @@
 
     p {
         font-size: 1.2em;
+        text-align: center;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    ul > li > p {
+        padding: 0;
+        margin: 0.3em 0;
+        font-size: 1em;
     }
 
     body {
@@ -35,5 +66,12 @@
             "Open Sans",
             "Helvetica Neue",
             sans-serif;
+    }
+
+    :link {
+        color: #0000ee;
+    }
+    :visited {
+        color: #551a8b;
     }
 </style>
