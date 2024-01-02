@@ -1,6 +1,5 @@
 <script>
     import LayoutGrid, { Cell } from "@smui/layout-grid";
-    import { Icon } from "@smui/button";
 </script>
 
 <LayoutGrid>
@@ -87,7 +86,8 @@
         border-radius: 2%;
     }
 
-    .icons,a {
+    .icons,
+    a {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -123,7 +123,6 @@
         font-weight: 300;
         font-style: italic;
         color: #0e1111; /* Adjust the color to your preference */
-
     }
 
     figure {
@@ -134,7 +133,7 @@
         background: #0e1111;
         border: #0e1111;
         color: #faf9f6;
-        border-radius: 10%;
+        border-radius: 2%;
         padding: 0 2em /* Adjust padding as needed */;
         margin: -7em 0 0 0.4em;
         cursor: pointer;
@@ -167,6 +166,4 @@
     .material-icons:hover {
         cursor: pointer;
     }
-
-
 </style>

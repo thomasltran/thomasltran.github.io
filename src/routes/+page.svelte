@@ -2,7 +2,7 @@
     // import TopAppBar from '@smui/top-app-bar';
     import IntroText from "./home/intro.svelte";
     import Timeline from "./home/experience.svelte";
-    import Footer from "./footers/footer.svelte"
+    import Interests from "./home/interests.svelte";
 </script>
 
 <body>
@@ -18,11 +18,15 @@
                 <Timeline></Timeline>
             </div>
         </div>
-        <!-- <div class="card white">Card 3</div> -->
+        <div class="card white">
+            <div class="content">
+                <Interests></Interests>
+            </div>
+        </div>
     </div>
-    <div class="footer white">
-            <Footer></Footer>
-    </div>
+    <!-- <div class="footer white">
+        <Footer></Footer>
+    </div> -->
 </body>
 
 <style>
@@ -33,7 +37,7 @@
     }
 
     .white {
-        background: #FAF9F6;
+        background: #faf9f6;
     }
 
     .black {
@@ -55,14 +59,14 @@
             sans-serif;
     }
 
-    .header,
+    /* .header,
     .footer {
         height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
         color: #0e1111;
-    }
+    } */
 
     .card {
         width: 100%;
@@ -74,14 +78,14 @@
 
     .card-timeline {
         width: 100%;
-        /* height: 244vh; */
-        height: 143vh;
+        height: 244vh;
         color: white;
         display: flex;
         align-items: center;
         justify-content: center;
         position: sticky;
         top: 0;
+        overflow: hidden;
     }
 
     .content-timeline {
