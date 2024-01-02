@@ -106,6 +106,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 0 1em;
     }
 
     .cell.content {
