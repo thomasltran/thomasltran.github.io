@@ -42,7 +42,7 @@
 	}
 
 	.content {
-		width: 50%;
+		width: 50vh;
 		text-align: left;
 	}
 </style>
