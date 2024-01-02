@@ -10,7 +10,9 @@
     }
 </script>
 
-<h1>Blog</h1>
+<h1><a href="/blog" target="_blank"
+    >Blog</a
+></h1>
 
 <LayoutGrid>
     <div class="cells">
@@ -27,7 +29,11 @@
                     Beyond that, the repetition and cyclic nature of it all
                     feels meditative.
                 </p>
-                <p>Feel free to check out my blog where I detail my journey.</p>
+                <p>
+                    Feel free to check out my <a class="blog" href="/blog" target="_blank"
+                        >blog</a
+                    > where I detail my journey.
+                </p>
             </div>
         </Cell>
         <Cell>
@@ -106,5 +112,13 @@
 
     figure {
         padding: 0 2em;
+    }
+
+    a.blog {
+        color: #0000ee;
+    }
+
+    h1 > a {
+        text-decoration: none !important;
     }
 </style>
