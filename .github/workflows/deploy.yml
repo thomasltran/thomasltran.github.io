@@ -2,8 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: 'main'
 
 jobs:
   build_site:
@@ -11,6 +10,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
+      # If you're using pnpm, add this step then change the commands and cache key below to use `pnpm`
+      # - name: Install pnpm
+      #   uses: pnpm/action-setup@v2
+      #   with:
+      #     version: 8
 
       - name: Install Node.js
         uses: actions/setup-node@v3
@@ -21,20 +26,22 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build
+      - name: build
         env:
-          BASE_PATH: '/'
-        run: npm run build
+          BASE_PATH: '/thomasltran.github.io'
+        run: |
+          npm run build
 
       - name: Upload Artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-pages-artifact@v2
         with:
-          name: build
-          path: build/
+          # this should match the `pages` option in your adapter-static options
+          path: 'build/'
 
   deploy:
     needs: build_site
     runs-on: ubuntu-latest
+
     permissions:
       pages: write
       id-token: write
@@ -47,5 +54,3 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v2
-        with:
-          target_branch: 'gh-pages'
