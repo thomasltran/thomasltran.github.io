@@ -23,7 +23,7 @@ jobs:
 
       - name: Build
         env:
-          BASE_PATH: '/'
+          BASE_PATH: '/thomasltran.github.io'
         run: yarn build
 
       - name: Upload Artifacts
