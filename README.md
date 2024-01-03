@@ -40,3 +40,4 @@ You can preview the production build with `npm run preview`.
 ## to-do
 - global styling
 - scaling/responsiveness
+- github workflows
