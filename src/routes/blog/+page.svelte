@@ -7,9 +7,10 @@
         <h1>Blog</h1>
         <p class="description">
             Main website is <a
-                href="https://thomasltran.github.io/" target="_blank">here</a
+                href="https://thomasltran.github.io/"
+                target="_blank">here</a
             >, but it's best viewed on desktop until I have time for
-            responsiveness.
+            responsiveness. Content updating on a weekly basis.
         </p>
         <div>
             <ul>
@@ -66,6 +67,7 @@
             "Open Sans",
             "Helvetica Neue",
             sans-serif;
+        background: #faf9f6;
     }
 
     :link {

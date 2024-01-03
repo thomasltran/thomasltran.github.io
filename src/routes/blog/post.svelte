@@ -4,15 +4,17 @@
 	export let day;
 </script>
 
-<article class="centered-content">
-	<div class="content">
-		<h1>{date}</h1>
+<body>
+	<article class="centered-content">
+		<div class="content">
+			<h1>{date}</h1>
 
-		<p>Day: {day}</p>
+			<p>Day: {day}</p>
 
-		<slot />
-	</div>
-</article>
+			<slot />
+		</div>
+	</article>
+</body>
 
 <style>
 	* {
@@ -32,6 +34,12 @@
 		font-size: 1em;
 
 		padding: 1em 0;
+
+		color: #0e1111;
+	}
+
+	body {
+		background: #faf9f6;
 	}
 
 	.centered-content {

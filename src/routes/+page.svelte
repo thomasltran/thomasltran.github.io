@@ -78,7 +78,7 @@
 
     .card-timeline {
         width: 100%;
-        height: 244vh;
+        height: 247vh;
         color: white;
         position: sticky;
         top: 0;
@@ -105,5 +105,15 @@
         height: 100%;
         object-fit: cover;
         z-index: 2;
+    }
+
+    @media only screen and (max-width: 1100px){
+        .card-timeline {
+            height: 265vh;
+        }
+
+        .content {
+            padding: 0 1em;
+        }
     }
 </style>

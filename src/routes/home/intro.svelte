@@ -46,7 +46,7 @@
 
                 <div>
                     <a
-                        href="https://drive.google.com/file/d/1BlE2xPbcVrCTl6M3phRIVXGm-BDNKQ93/view?usp=sharing"
+                        href="https://drive.google.com/drive/folders/1Ekb0FtVa2NcVclDTTbxhV0jgX6sPi0sh?usp=sharing"
                         target="_blank"
                     >
                         <button>
@@ -165,5 +165,27 @@
 
     .material-icons:hover {
         cursor: pointer;
+    }
+
+    @media only screen and (max-width: 1100px) {
+        .cell.intro {
+            width: 100%;
+            height: 50vh;
+            margin-left: -1em;
+        }
+
+        .cell.content {
+            width: 100%;
+            height: 50vh;
+        }
+
+        figure {
+            display: none;
+        }
+
+        .cells {
+            display: flex;
+            flex-direction: column;
+        }
     }
 </style>

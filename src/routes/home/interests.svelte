@@ -133,4 +133,18 @@
 
         text-decoration: none !important;
     }
+
+    @media only screen and (max-width: 1100px){
+
+        figure {
+            display: none;
+        }
+
+        .cells {
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            text-align: center;
+        }
+    }
 </style>
