@@ -2,8 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: 'main'
 
 jobs:
   build_site:
@@ -12,25 +11,32 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install Node.js and Yarn
+      # If you're using pnpm, add this step then change the commands and cache key below to use `pnpm`
+      # - name: Install pnpm
+      #   uses: pnpm/action-setup@v2
+      #   with:
+      #     version: 8
+
+      - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 21 # Adjust the Node.js version as needed
+          node-version: 21
           cache: yarn
 
       - name: Install dependencies
         run: yarn install
 
-      - name: Build
+      - name: build
         env:
-          BASE_PATH: '/thomasltran.github.io'
-        run: yarn build
+          BASE_PATH: '/${{ github.event.repository.name }}'
+        run: |
+          yarn build
 
       - name: Upload Artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-pages-artifact@v2
         with:
-          name: build
-          path: build/
+          # this should match the `pages` option in your adapter-static options
+          path: 'build/'
 
   deploy:
     needs: build_site
@@ -45,15 +51,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          ref: gh-pages
-          fetch-depth: 0
-
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v2
-        with:
-          target_branch: 'gh-pages'
-          publish_dir: ./build
