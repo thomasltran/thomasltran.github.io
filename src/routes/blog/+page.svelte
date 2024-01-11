@@ -6,11 +6,7 @@
     <div>
         <h1>Blog</h1>
         <p class="description">
-            Main website is <a
-                href="https://thomasltran.github.io/"
-                target="_blank">here</a
-            >, but it's best viewed on desktop until I have time for
-            responsiveness. Content updating on a weekly basis.
+            Written during daily cardio session. Content updating on a weekly basis.
         </p>
         <div>
             <ul>
