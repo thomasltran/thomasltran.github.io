@@ -27,12 +27,11 @@
 <style>
     * {
         color: #0e1111;
-        overflow: hidden;
     }
 
     h1 {
         text-align: center;
-        padding: 50px 0;
+        padding: 50px 0 25px 0;
     }
 
     p {
@@ -40,12 +39,16 @@
         text-align: center;
     }
 
+    p, .description {
+        padding-bottom: 1em;
+    }
+
     ul {
         list-style: none;
         padding: 0;
     }
     ul > li > p {
-        padding: 0;
+        padding: 0.1em 0;
         margin: 0.3em 0;
         font-size: 1em;
     }
