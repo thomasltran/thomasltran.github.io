@@ -41,6 +41,7 @@ You can preview the production build with `npm run preview`.
 - global styling
 - scaling/responsiveness
 - github workflows
+- script test
 
 docker build -t your-image-name .
 docker run -p 8080:80 your-image-name
