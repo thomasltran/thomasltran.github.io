@@ -44,7 +44,7 @@
                     </a>
                 </div>
 
-                <div>
+                <!-- <div>
                     <a
                         href="https://drive.google.com/drive/folders/1Ekb0FtVa2NcVclDTTbxhV0jgX6sPi0sh?usp=sharing"
                         target="_blank"
@@ -60,7 +60,7 @@
                             </div>
                         </button>
                     </a>
-                </div>
+                </div> -->
             </div>
         </Cell>
     </div>
