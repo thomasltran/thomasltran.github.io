@@ -12,8 +12,8 @@
                     Science with a minor in Math at Virginia Tech.
                 </p>
                 <p>
-                    My interests revolve around software development, cloud
-                    computing, and big data analytics.
+                    My interests revolve around cloud
+                    computing and operating systems.
                 </p>
             </div>
         </Cell>
