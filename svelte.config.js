@@ -16,7 +16,17 @@ const config = {
             fallback: undefined,
             precompress: false,
             strict: true
-        })
+        }),
+        prerender: {
+            handleHttpError: ({ path, referrer, message }) => {
+                // Ignore pagination errors during prerender
+                // Pagination will work client-side
+                if (path.includes('?page=')) {
+                    return;
+                }
+                throw new Error(message);
+            }
+        }
     },
     extensions: ['.svelte', '.svx', ...mdsvexConfig.extensions]
 };
