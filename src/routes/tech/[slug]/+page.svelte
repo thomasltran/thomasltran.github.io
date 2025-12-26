@@ -35,9 +35,9 @@
     
     <!-- Post header -->
     <header class="space-y-3 pb-6 border-b border-surface-500/20">
-        <h1 class="h1 font-bold tracking-tight">
+        <h2 class="h2 font-bold tracking-tight">
             {data.metadata.title || data.slug}
-        </h1>
+        </h2>
         
         <div class="flex flex-wrap items-center gap-4 text-sm opacity-70">
             {#if formattedDate}

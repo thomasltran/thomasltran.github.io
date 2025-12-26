@@ -7,7 +7,7 @@
 <div class="space-y-10">
     
     <header class="space-y-4">
-        <h1 class="h1 font-bold tracking-tight">
+        <h1 class="h2 font-bold tracking-tight">
             Hello, I'm Thomas Tran 👍
         </h1>
     </header>
