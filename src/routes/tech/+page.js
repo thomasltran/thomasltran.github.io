@@ -1,9 +1,10 @@
 import { loadPosts, paginatePosts } from '$lib/blog.js';
 
-// Disable prerendering for this page since it uses query params
-export const prerender = false;
+// Enable prerendering - this will prerender /tech without query params
+export const prerender = true;
 
 export async function load({ url }) {
+    // During prerender, url.searchParams won't work, so default to page 1
     const page = parseInt(url.searchParams.get('page') || '1', 10);
     
     // Load all tech posts

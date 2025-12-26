@@ -13,7 +13,7 @@ const config = {
         adapter: adapter({
             pages: 'build',
             assets: 'build',
-            fallback: undefined,
+            fallback: 'index.html', // SPA fallback for client-side routing
             precompress: false,
             strict: true
         }),
@@ -22,10 +22,12 @@ const config = {
                 // Ignore pagination errors during prerender
                 // Pagination will work client-side
                 if (path.includes('?page=')) {
+                    console.warn(`Ignoring prerender error for pagination: ${path}`);
                     return;
                 }
                 throw new Error(message);
-            }
+            },
+            handleUnseenRoutes: 'ignore' // Ignore unseen dynamic routes - they'll be handled by fallback
         }
     },
     extensions: ['.svelte', '.svx', ...mdsvexConfig.extensions]
