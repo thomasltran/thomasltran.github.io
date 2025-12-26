@@ -13,10 +13,13 @@ const config = {
         adapter: adapter({
             pages: 'build',
             assets: 'build',
-            fallback: 'index.html', // SPA fallback for client-side routing
+            fallback: undefined, // No fallback - prerender everything we can
             precompress: false,
             strict: true
         }),
+        paths: {
+            base: process.env.BASE_PATH || ''
+        },
         prerender: {
             handleHttpError: ({ path, referrer, message }) => {
                 // Ignore pagination errors during prerender
@@ -27,7 +30,7 @@ const config = {
                 }
                 throw new Error(message);
             },
-            handleUnseenRoutes: 'ignore' // Ignore unseen dynamic routes - they'll be handled by fallback
+            handleUnseenRoutes: 'ignore' // Ignore unseen dynamic routes
         }
     },
     extensions: ['.svelte', '.svx', ...mdsvexConfig.extensions]
