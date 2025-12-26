@@ -13,24 +13,21 @@ const config = {
         adapter: adapter({
             pages: 'build',
             assets: 'build',
-            fallback: undefined, // No fallback - prerender everything we can
+            fallback: undefined,
             precompress: false,
             strict: true
         }),
-        paths: {
-            base: process.env.BASE_PATH || ''
-        },
+        // NO paths.base needed for username.github.io repos!
         prerender: {
             handleHttpError: ({ path, referrer, message }) => {
                 // Ignore pagination errors during prerender
-                // Pagination will work client-side
                 if (path.includes('?page=')) {
                     console.warn(`Ignoring prerender error for pagination: ${path}`);
                     return;
                 }
                 throw new Error(message);
             },
-            handleUnseenRoutes: 'ignore' // Ignore unseen dynamic routes
+            handleUnseenRoutes: 'ignore'
         }
     },
     extensions: ['.svelte', '.svx', ...mdsvexConfig.extensions]
