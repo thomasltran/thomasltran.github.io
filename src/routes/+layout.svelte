@@ -33,7 +33,7 @@
                 <img src={githubIcon} alt="GitHub" class="w-6 h-6 dark:invert" />
             </a>
             <a href="https://www.linkedin.com/in/thomasltran/" target="_blank" class="opacity-60 hover:opacity-100 transition-opacity">
-                <img src={linkedinIcon} alt="LinkedIn" class="w-6 h-6" />
+                <img src={linkedinIcon} alt="LinkedIn" class="w-6 h-6 dark:invert" />
             </a>
         </div>
 
