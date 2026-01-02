@@ -4,7 +4,7 @@ date: "2026-01-02"
 tags: ["dev"]
 ---
 
-I've been using Windsurf at working for the past couple of months. It feels a lot like I'm vibe coding everything. Pretty much it's giving it a prompt, letting it run commands, and repeating until the task is solved. I could feel my brain degrading over time. So, I've recently decided to pick up LeetCode + learning System Design on the side before spring semester starts.
+I've been using Windsurf at work for the past couple of months. It feels a lot like I'm vibe coding everything. Pretty much it's giving it a prompt, letting it run commands, and repeating until the task is solved. I could feel my brain degrading over time. So, I've recently decided to pick up LeetCode + learning System Design on the side before spring semester starts.
 
 I don't think the answer is to avoid LLMs altogether, but to find a way to keep building muscle memory with syntax and problem solve. I also built my PC in the summer, and ever since work started, the most my GPU has done is run YouTube videos.
 
