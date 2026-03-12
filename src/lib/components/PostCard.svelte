@@ -26,30 +26,31 @@
 
 <a 
     href="/{category}/{slug}"
-    class="block group"
+    class="block group outline-none"
     data-sveltekit-preload-data="hover"
 >
-    <article class="p-6 rounded-lg border border-surface-500/20 hover:border-primary-500/40 transition-all duration-200 hover:shadow-lg bg-surface-50/5 hover:bg-surface-50/10">
-        <div class="space-y-3">
+    <article class="relative p-7 rounded-2xl border border-surface-500/20 bg-surface-50/40 dark:bg-surface-900/40 backdrop-blur-sm transition-all duration-500 hover:shadow-xl hover:border-surface-500/50 hover:-translate-y-1.5 overflow-hidden">
+        
+        <div class="relative z-10 space-y-4">
             <div>
-                <h2 class="text-xl font-bold">
+                <h2 class="text-2xl font-heading font-bold text-surface-900 dark:text-surface-50 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300">
                     {title}
                 </h2>
-                <time class="text-sm opacity-60 mt-1 block">
+                <time class="text-sm font-medium text-surface-500 dark:text-surface-400 mt-2 block">
                     {formattedDate}
                 </time>
             </div>
             
             {#if summary}
-                <p class="text-base opacity-80 leading-relaxed">
+                <p class="text-base text-surface-700 dark:text-surface-300 leading-relaxed font-light line-clamp-3">
                     {summary}
                 </p>
             {/if}
             
             {#if tags && tags.length > 0}
-                <div class="flex flex-wrap gap-2 pt-2">
+                <div class="flex flex-wrap gap-2 pt-3">
                     {#each tags as tag}
-                        <span class="text-xs px-2 py-1 rounded bg-surface-500/10 opacity-70">
+                        <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-surface-200 dark:bg-surface-800 text-surface-700 dark:text-surface-300 border border-surface-500/20 shadow-sm">
                             {tag}
                         </span>
                     {/each}

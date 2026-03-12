@@ -24,9 +24,11 @@
 		"@tailwindcss/typography": "^0.5.19",
 		"@tailwindcss/vite": "^4.1.17",
 		"@types/node": "^22",
+		"clsx": "^2.1.1",
 		"eslint": "^9.39.1",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-svelte": "^3.13.1",
+		"framer-motion": "^12.35.2",
 		"globals": "^16.5.0",
 		"mdsvex": "^0.12.6",
 		"prettier": "^3.7.4",
@@ -34,9 +36,15 @@
 		"prettier-plugin-tailwindcss": "^0.7.2",
 		"svelte": "^5.45.6",
 		"svelte-check": "^4.3.4",
+		"tailwind-merge": "^3.5.0",
 		"tailwindcss": "^4.1.17",
 		"typescript": "^5.9.3",
 		"typescript-eslint": "^8.48.1",
 		"vite": "^7.2.6"
+	},
+	"dependencies": {
+		"@threlte/core": "^8.4.1",
+		"@threlte/extras": "^9.8.1",
+		"three": "^0.183.2"
 	}
 }

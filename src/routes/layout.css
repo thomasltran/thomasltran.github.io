@@ -1,5 +1,35 @@
 @plugin '@tailwindcss/typography';
 @import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
 @import '@skeletonlabs/skeleton';
 @import '@skeletonlabs/skeleton-svelte';
 @import '@skeletonlabs/skeleton/themes/cerberus';
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-surface-50 dark:bg-surface-900 text-surface-900 dark:text-surface-50 transition-colors duration-300;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    @apply font-heading font-bold tracking-tight;
+  }
+}
+
+@keyframes textGenerate {
+  0% {
+      opacity: 0;
+      transform: translateY(8px);
+      filter: blur(4px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+  }
+}
