@@ -15,7 +15,7 @@
     <meta name="description" content="Personal portfolio of Thomas Tran, Software Engineer at Capital One." />
 </svelte:head>
 
-<header class="space-y-4 mb-8 mt-8">
+<header class="space-y-4 mb-8 mt-4 sm:mt-8">
     <h1 class="h1 tracking-tight text-3xl sm:text-5xl lg:text-6xl text-surface-900 dark:text-surface-50">
         <TextGenerateEffect words="Hello, I'm Thomas Tran." className="font-bold" />
     </h1>
@@ -48,7 +48,6 @@
         
         <!-- Currently Reading Widget -->
         <div class="relative group rounded-2xl bg-surface-50/40 dark:bg-surface-900/40 backdrop-blur-xl border border-surface-500/20 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 flex items-center p-5">
-            <div class="absolute inset-0 bg-gradient-to-r from-primary-500/5 to-tertiary-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0"></div>
             
             <div class="relative z-10 flex gap-5 w-full items-center">
                 <!-- Book Cover -->
@@ -77,7 +76,6 @@
 
         <!-- Gym Statement Widget (3D) -->
         <div class="relative group rounded-2xl bg-surface-50/40 dark:bg-surface-900/40 backdrop-blur-xl border border-surface-500/20 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 flex flex-col items-center justify-center h-56 sm:h-80">
-            <div class="absolute inset-0 bg-gradient-to-br from-primary-500/5 to-tertiary-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0"></div>
             
             <div class="absolute inset-0 z-10 p-4 pt-10 pb-16">
                 <!-- 3D Canvas goes here -->

@@ -15,7 +15,7 @@
 
 <div class="container mx-auto px-5 sm:px-6 max-w-4xl min-h-screen flex flex-col">
     
-    <header class="sticky top-0 z-50 py-4 sm:py-6 mb-6 sm:mb-8 backdrop-blur-md bg-surface-50/70 dark:bg-surface-900/70 border-b border-surface-500/20 -mx-5 px-5 sm:-mx-6 sm:px-6 md:mx-0 md:px-0 transition-all duration-300">
+    <header class="sticky top-0 z-50 py-4 sm:py-6 mb-0 backdrop-blur-md bg-surface-50/70 dark:bg-surface-900/70 border-b border-surface-500/20 -mx-5 px-5 sm:-mx-6 sm:px-6 md:mx-0 md:px-0 transition-all duration-300">
         <div class="flex justify-between items-center w-full">
             <nav class="flex gap-5 sm:gap-8 text-base sm:text-lg">
                 <a href="/" class="hover:text-primary-500 transition-colors font-semibold tracking-wide">Home</a>
@@ -26,13 +26,13 @@
         </div>
     </header>
 
-    <main class="flex-grow pt-4 pb-12">
+    <main class="flex-grow pt-0 pb-4 sm:pb-8">
         {@render children()}
     </main>
 
     <footer class="mt-auto py-8 border-t border-surface-500/20 flex justify-between items-center text-surface-600 dark:text-surface-400">
         
-        <p class="text-sm">Last Updated: 25/12/2025</p>
+        <p class="text-sm">Last Updated: 12/03/2026</p>
 
         <div class="flex items-center gap-6">
             <a href="https://github.com/thomasltran" target="_blank" class="hover:text-primary-500 hover:scale-110 transition-all duration-200">
