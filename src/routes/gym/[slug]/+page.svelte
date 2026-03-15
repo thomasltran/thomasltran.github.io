@@ -24,7 +24,7 @@
     {/if}
 </svelte:head>
 
-<div class="space-y-6">
+<div class="space-y-6 mt-4 sm:mt-8">
     <!-- Back button
     <a 
         href="/gym"

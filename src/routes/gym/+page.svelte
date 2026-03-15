@@ -10,7 +10,7 @@
     <meta name="description" content="Training logs, workout tips, and fitness journey." />
 </svelte:head>
 
-<div class="space-y-8">
+<div class="space-y-8 mt-4 sm:mt-8">
     <header class="space-y-2">
         <p class="text-lg opacity-80">
             Revelations from the gym.

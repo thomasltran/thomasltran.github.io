@@ -10,7 +10,7 @@
     <meta name="description" content="Technical writing and tutorials on software engineering, systems programming, and more." />
 </svelte:head>
 
-<div class="space-y-8">
+<div class="space-y-8 mt-4 sm:mt-8">
     <header class="space-y-2">
         <p class="text-lg opacity-80">
             Summaries and discussions of papers.
