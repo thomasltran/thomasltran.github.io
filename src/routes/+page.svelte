@@ -2,12 +2,12 @@
     import TextGenerateEffect from '$lib/components/TextGenerateEffect.svelte';
     import DumbbellCanvas from '$lib/components/DumbbellCanvas.svelte';
     
-    let bookCover = "https://images.penguinrandomhouse.com/cover/9780593622452"; 
-    let bookTitle = "Pride and Prejudice"; 
-    let bookAuthor = "Jane Austen";
+    let bookCover = "https://m.media-amazon.com/images/I/91TXmi4Y4UL._AC_UF1000,1000_QL80_.jpg"; 
+    let bookTitle = "The City and Its Uncertain Walls"; 
+    let bookAuthor = "Haruki Murakami";
 
     // Single source of truth for bench press weight
-    const BENCH_WEIGHT = 250;
+    const BENCH_WEIGHT = 275;
 </script>
 
 <svelte:head>
